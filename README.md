@@ -45,8 +45,7 @@ ubuntu@ubun2004:~/playbooks/gold$ tree
 │       │   └── main.yml
 │       └── templates
 │           ├── default
-│           ├── index.php
-│           └── index.php2
+│           └── index.php
 ├── site.yml
 ├── templates
 │   ├── default
