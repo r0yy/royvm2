@@ -57,8 +57,6 @@ ubuntu@ubun2004:~/playbooks$ tree
 15 directories, 21 files
 
 
-15 directories, 22 files
-
 ```
 
 Dependancies die geïnstalleerd moeten zijn op de host 
