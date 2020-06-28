@@ -68,10 +68,22 @@ Ansible;
 Vagrant;
 
 Voer hiervoor het script "prerequisites" uit:
+
+Eerst uitvoerbaar maken:
+```ruby
+chmod +x prerequisites
+```
+Daarna uitvoeren:
 ```ruby
 ./prerequisites
 ```
 Wanneer dit script is uitgevoerd zijn de voorbereidingen klaar en kan er gedeployed worden:
+
+Eerst uitvoerbaar maken:
+```ruby
+chmod +x deploy
+```
+Daarna uitvoeren:
 ```ruby
 ./deploy
 ```
