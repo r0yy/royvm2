@@ -1,0 +1,19 @@
+#!/bin/bash
+echo "Met dit script wordt de gold omgeving automatisch uitgerold." 
+
+read -r -p "Wil je deze nu deployen? [y/N] " response
+response=${response,,}    
+if [[ "$response" =~ ^(yes|y)$ ]]
+then
+vagrant up 
+echo "*******************************************************"
+echo "de omgeving is nu gedeployed! Je browser wordt gestart"
+echo "*******************************************************"
+sleep 5
+firefox localhost:8080 &
+else
+  exit 0
+fi
+
+
+
