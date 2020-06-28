@@ -1,0 +1,22 @@
+---
+- name: install mysql client on all hosts
+  hosts: all
+  become: true
+
+  roles:
+    - common
+
+
+- name: configure and deploy the webservers and application code
+  hosts: ws1, ws2
+  become: true
+
+  roles:
+    - web
+
+- name: deploy MySQL and configure the databases
+  hosts: db1
+  become: true
+
+  roles:
+    - database
