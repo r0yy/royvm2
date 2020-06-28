@@ -25,9 +25,9 @@ ubuntu@ubun2004:~/playbooks$ tree
     ├── group_vars
     │   ├── all
     │   └── all.save
-    ├── hosts
     ├── lb.yml
     ├── prerequisites
+    ├── README.md
     ├── roles
     │   ├── common
     │   │   ├── handlers
@@ -46,13 +46,16 @@ ubuntu@ubun2004:~/playbooks$ tree
     │       │   └── main.yml
     │       └── templates
     │           ├── default
-    │           └──  index.php
+    │           └── index.php
     ├── site.yml
     ├── templates
     │   ├── default
     │   ├── index.php.j2
     │   └── nginx.conf.j2
     └── Vagrantfile
+
+15 directories, 21 files
+
 
 15 directories, 22 files
 
