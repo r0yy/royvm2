@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "*******************************************************************"
+echo "Met dit script worden Vagrant, Virtualbox en Ansible geinstalleerd." 
+echo "*******************************************************************"
+read -r -p "Weet je zeker dat je deze wilt installeren?[y/N] " response
+response=${response,,}    
+if [[ "$response" =~ ^(yes|y)$ ]]
+then
+sudo apt-get install vagrant -y
+sudo apt-get install virtualbox -y
+sudo apt-get install ansible -y
+echo "******************************************************************"
+echo "                           Gereed!                                "
+echo "******************************************************************"
+else
+echo "Script geannuleerd! Exiting"
+  exit 0
+fi
