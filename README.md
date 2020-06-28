@@ -15,45 +15,47 @@ mkdir gold
 ```
 Plaats hier vervolgens alle bestanden in, zodat de layout er als volgt uitziet:.
 ```ruby
-ubuntu@ubun2004:~/playbooks/gold$ tree
+ubuntu@ubun2004:~/playbooks$ tree
 .
-├── ansible.cfg
-├── deploy
-├── files
-│   └── nginx.conf
-├── group_vars
-│   ├── all
-│   └── all.save
-├── hosts
-├── lb.yml
-├── prerequisites
-├── roles
-│   ├── common
-│   │   ├── handlers
-│   │   │   └── main.yml
-│   │   └── tasks
-│   │       └── main.yml
-│   ├── database
-│   │   ├── handlers
-│   │   │   └── main.yml
-│   │   └── tasks
-│   │       └── main.yml
-│   └── web
-│       ├── handlers
-│       │   └── main.yml
-│       ├── tasks
-│       │   └── main.yml
-│       └── templates
-│           ├── default
-│           └── index.php
-├── site.yml
-├── templates
-│   ├── default
-│   ├── index.php.j2
-│   └── nginx.conf.j2
-└── Vagrantfile
+└── gold
+    ├── ansible.cfg
+    ├── deploy
+    ├── files
+    │   └── nginx.conf
+    ├── group_vars
+    │   ├── all
+    │   └── all.save
+    ├── hosts
+    ├── lb.yml
+    ├── prerequisites
+    ├── roles
+    │   ├── common
+    │   │   ├── handlers
+    │   │   │   └── main.yml
+    │   │   └── tasks
+    │   │       └── main.yml
+    │   ├── database
+    │   │   ├── handlers
+    │   │   │   └── main.yml
+    │   │   └── tasks
+    │   │       └── main.yml
+    │   └── web
+    │       ├── handlers
+    │       │   └── main.yml
+    │       ├── tasks
+    │       │   └── main.yml
+    │       └── templates
+    │           ├── default
+    │           └──  index.php
+    ├── site.yml
+    ├── templates
+    │   ├── default
+    │   ├── index.php.j2
+    │   └── nginx.conf.j2
+    └── Vagrantfile
 
-14 directories, 22 files
+15 directories, 22 files
+
 ```
 
 Dependancies die geïnstalleerd moeten zijn op de host 
