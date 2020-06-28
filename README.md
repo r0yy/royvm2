@@ -85,3 +85,5 @@ Daarna uitvoeren:
 ```ruby
 ./deploy
 ```
+
+Als dit klaar is wordt automatisch Firefox opgestart en wordt de website weergegeven 
