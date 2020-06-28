@@ -7,7 +7,7 @@ if [[ "$response" =~ ^(yes|y)$ ]]
 then
 vagrant up 
 echo "*******************************************************"
-echo "de omgeving is nu gedeployed! Je browser wordt gestart"
+echo "De omgeving is nu gedeployed! Je browser wordt gestart"
 echo "*******************************************************"
 sleep 5
 firefox localhost:8080 &
