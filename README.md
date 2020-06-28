@@ -67,7 +67,7 @@ Voer hiervoor het script "prerequisites" uit:
 ```ruby
 ./prerequisites
 ```
-Wanneer dit script is uitgevoerd zijn de voorbereidingen klaar. en kan er gedeployed worden:
+Wanneer dit script is uitgevoerd zijn de voorbereidingen klaar en kan er gedeployed worden:
 ```ruby
 ./deploy
 ```
